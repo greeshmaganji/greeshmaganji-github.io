@@ -15,6 +15,29 @@ p > a {
     color: whitesmoke;
 }
 
+.icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.button {
+    background: #0275b5;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    box-shadow: black;
+}
+
+.button:hover {
+    background: #555;
+}
+
 /* Wrapper styling */
 #wrapper {
     max-width: 1200px;
@@ -26,6 +49,7 @@ p > a {
 header {
     text-align: center;
     padding: 50px 0;
+    padding-bottom: 10px;
 }
 
 header h1 {
@@ -197,7 +221,7 @@ header p {
 /* Project styling */
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
 }
 
@@ -371,7 +395,7 @@ body.light-mode {
 }
 
 body.light-mode p > a {
-    color: #333;
+    color: #fff;
 }
 
 body.light-mode header h1 {
@@ -422,7 +446,7 @@ body.light-mode .features li p {
 }
 
 body.light-mode .features li a {
-    color: #333;
+    color: #fff;
 }
 
 body.light-mode .skills-list li {
@@ -497,4 +521,23 @@ body.light-mode #contact dd {
 body.light-mode footer {
     background: #fff;
     color: #333;
+}
+
+@media screen and (max-width:900px) {
+    #nav {
+        display:none;
+    }
+    #wrapper {
+        padding: 10px;
+    }
+    .features > li {
+        margin: 5px;
+        padding: 5px;
+    }
+    .main{
+        padding: 10px;
+        margin:10px;
+        margin-left: 5px;
+        margin-right: 5px;;
+    }
 }

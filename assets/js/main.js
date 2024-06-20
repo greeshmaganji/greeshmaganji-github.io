@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 function toggleMode() {
     const body = document.body;
     const toggleButton = document.getElementById('mode-toggle');
