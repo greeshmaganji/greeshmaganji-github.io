@@ -28,3 +28,4 @@ function toggleMode() {
         toggleButton.textContent = 'Light Mode';
     }
 }
+
